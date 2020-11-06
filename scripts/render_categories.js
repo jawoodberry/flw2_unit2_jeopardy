@@ -34,7 +34,6 @@ let categories = [
  */
 function renderCategories() {
   // Add code here
-  console.log("working!!");
   let htmlString;
   for (var i = 0; i < categories.length; i++) {
     let categoryStr =
@@ -45,4 +44,3 @@ function renderCategories() {
     $("#categories").append(categoryStr);
   }
 }
-renderCategories();
