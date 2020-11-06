@@ -35,9 +35,14 @@ let categories = [
 function renderCategories() {
   // Add code here
   console.log("working!!");
-  for (var i = 0; i < categories.length; ) {
-    $("#categories").append(`<h1>${categories[i]}</h1>`);
+  let htmlString;
+  for (var i = 0; i < categories.length; i++) {
+    let categoryStr =
+      "<div class='category'><div class='category-cell'>" +
+      categories[i] +
+      "</div></div>";
+    htmlString = htmlString + categoryStr;
+    $("#categories").append(categoryStr);
   }
-  i++;
 }
 renderCategories();
